@@ -1,0 +1,170 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  
+}
+body{
+  background-color: #151519;
+  font-family: "Roboto", sans-serif;
+}
+/* Navbar */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #151519;
+  padding: 10px 10px 30px 10px;
+  margin: 0 10%;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.nav-links li {
+  padding: 10px;
+  margin-right: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  color: whitesmoke;
+}
+
+.contact {
+  border: 2px solid #B04DE9;
+  border-radius: 0.7rem;
+}
+
+.fill {
+  background-color: #B04DE9;
+}
+
+.contact:hover, .fill:hover {
+  background-color: #B04DE9;
+  transition: background-color 0.9s ease;
+}
+.contact.fill:hover {
+  background-color: #151519;
+  transition: background-color 0.9s ease;
+}
+
+.contact img {
+  width: 20px;
+  margin: 0 5px;
+}
+
+.contact a {
+  display: flex;
+  padding: 0 10px;
+}
+
+.logo img {
+  width: 20rem;
+}
+
+.burger {
+  display: none;
+  width: 100%;
+}
+
+.line {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  padding: 3px;
+  margin: 5px 0;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .nav-links {
+      display: none;
+  }
+
+  .logo img {
+      margin: 0 0 20px 0;
+  }
+
+  .navbar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .burger {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+}
+
+
+/* Main section 1 */
+
+.main_section_1{
+  color: whitesmoke;
+  padding: 7rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-item,h2,h3,p,a{
+  margin: 1rem;
+}
+.service-item{
+  margin-left: 15rem;
+}
+.service-item h2{
+  font-family: "Aldrich", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 45px;
+  margin-bottom: 2rem;
+}
+
+
+/* Main section 2 */
+
+.main_section_2 {
+  height: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #B04DE9;
+  opacity: 0.8;
+}
+
+.intro-container {
+  display: flex;
+}
+
+.left-side {
+  width: 40%;
+  text-align: center;
+}
+
+.left-side img {
+  width: 25rem;
+  border-radius: 0.7rem;
+}
+
+.right-side {
+
+  width: 50%;
+  flex: 1;
+}
+.right-side p {
+  line-height: 2rem;
+  font-size: 1.2rem;
+}
