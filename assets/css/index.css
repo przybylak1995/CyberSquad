@@ -217,4 +217,20 @@ body{
 
 
 /* Carousel*/
-
+.hacked{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hacked h2{
+  margin: 0 0 4rem 0 ;
+}
+.companies_hackt{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.hackt_image{
+  width: 13rem;
+}
