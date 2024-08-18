@@ -176,26 +176,45 @@ body{
   text-align: center;
   padding: 50px;
 }
+.services h2{
+  display: flex;
+  justify-content: left;
+  margin: 0 0 2rem 0 ;
+  color: whitesmoke;
+}
 
 .card-container {
+ 
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .card {
+  /*background-color: #86e94d;*/
+  background-color: #498129;
   width: 25%;
+  line-height: 1.5rem;
   padding: 20px;
   border: 1px solid #ccc;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   margin-bottom: 20px;
 }
+.card:hover{
+  background-color: #86e94d;
+  color: black;
+  cursor: pointer;
+}
 
-/* Aanpasbare stijlen voor een mooier uiterlijk */
 .card h3 {
   color: #333;
+  font-size: 2rem;
 }
 
 .card p {
-  color: #666;
+  color: black;
 }
+
+
+/* Carousel*/
+
