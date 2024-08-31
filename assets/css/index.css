@@ -207,9 +207,8 @@ body{
 }
 
 .card {
-  /*background-color: #86e94d;*/
+  background-color: #86e94d;
  /*background-color: #498129;*/
-  background-color: #8338af;
   width: 25%;
   line-height: 1.5rem;
   padding: 20px;
@@ -218,7 +217,7 @@ body{
   margin-bottom: 20px;
 }
 .card:hover{
-  background-color: #86e94d;
+  background-color: #8338af;
   color: black;
   cursor: pointer;
 }
@@ -234,21 +233,49 @@ body{
 
 
 
-/* Carousel*/
-.hacked{
+/* Carousel */
+.hacked {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.hacked h2{
-  margin: 0 0 4rem 0 ;
+
+.hacked h2 {
+  margin: 0 0 2rem 0;
+  font-size: 2rem;
+  text-align: center;
 }
-.companies_hackt{
+
+.companies_hackt {
   display: flex;
   width: 100%;
-  justify-content: space-around;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
 }
-.hackt_image{
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.hackt_image {
+  margin: 0 10px;
   width: 13rem;
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
