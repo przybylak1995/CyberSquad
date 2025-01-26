@@ -3,9 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CyberHunter</title>
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Add Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+
+    <!-- Add Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
     <script defer src="assets/js/index.js"></script>
 </head>
 <body>
@@ -14,13 +20,13 @@
             <img src="assets/cyberHunter.png" alt="">
         </div>
         <ul class="nav-links">
-            <li><a href="#">Solutions</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="#">Operators</a></li>
+            <li><a href="#About">About</a></li>
             <li><a href="#">Blog</a></li>
-            <li class="contact fill"><a href="#">
+            <li class="contact fill"><a href="#offers">
                 <img src="assets/shield-virus.svg">
                 Services</a></li>
-            <li class="contact"><a href="#">
+            <li class="contact"><a href="mailto:kristof.przybylak@cyberhunter.be">
                 <img src="assets/phone.svg">
                 Contact</a></li>
         </ul>
@@ -44,15 +50,15 @@
       <div class="left-side">
         <img src="assets/cyberthread.webp" alt="Your Name">
       </div>
-      <div class="right-side">
-        <h2>Who are we?</h2>
+      <div id="About" class="right-side">
+        <h2 >Who are we?</h2>
         <p>Cyberhunters: Your personalized cybersecurity partner. We believe that every organization, big or small, deserves optimal security. Instead of expensive, one-time penetration tests, we offer a proactive and long-term partnership. Our experienced experts get to know your systems in-depth and discover vulnerabilities that others miss. This allows us to effectively protect your business against cyberattacks. Whether it's manual hunt on your website for vulnerabilities, optimizing your development process, or increasing employee awareness: we are here for you. Choose Cyberhunters and sleep soundly again.</p>
       </div>
     </div>
   </div>
 
-  <div class="services">
-    <h2>What Makes Us Different:</h2>
+  <div class="different">
+    <h2>What Makes Us Different?</h2>
         <div class="card-container">
           <div class="card">
             <h3>Excellence</h3>
@@ -70,17 +76,107 @@
   </div>
 
 
-  
-  <div class="hacked">
-    <h2>Companies hacked:</h2>
-    <div class="companies_hackt">
-      <div class="carousel-track">
-        <img id="carousel_image1" class="hackt_image" src="assets/image1.jpg" alt="image1">
-        <img id="carousel_image2" class="hackt_image" src="assets/image2.png" alt="image2">
-        <img id="carousel_image3" class="hackt_image" src="assets/image3.jpeg" alt="image3">
+  <div id="offers" class="services">
+    <h2>What Do We Offer?</h2>
+    <div class="service-container">
+      <div class="service-card">
+        <h3>Long Mission</h3>
+        <p>This is a long-term contract in which we are discussing a set number of testing hours per month for a minimum period of six months. By implementing this approach, our operators gain much better insight into the technologies used to build the application. Additionally, we will establish a connection that allows you to reach out to us with any questions regarding new releases, unexpected alerts, or anything else, and we will assist you throughout the entire duration of the agreement. After a testing period with several customers, this method has proven to be a more effective and improved approach.</p>
+        <p class="price">Price for an Operator per hour: €85</p>
+        <a href="mailto:kristof.przybylak@cyberhunter.be" class="contact">Contact for more info</a>
+      </div>
+      <div class="service-card">
+        <h3>Short Mission</h3>
+        <p>A short-term mission is comparable to a penetration test, but with a focused, time-efficient approach. We dedicate a short period to thoroughly assess the web application, delivering one comprehensive report with our findings. This service is ideal when time is of the essence, such as when a project needs to go live quickly or when an audit is required to ensure compliance with security standards. We aim to begin the mission within a week, which is a fast turnaround in an industry where longer wait times are common.</p>
+        <p class="price">Price for an Operator per hour: €140</p>
+        <a href="mailto:kristof.przybylak@cyberhunter.be" class="contact">Contact for more info</a>
       </div>
     </div>
   </div>
+
+
+
+  <div class="carousel-container">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <img src="assets/tilroy.png" alt="Image 1">
+        </div>
+        <!-- Slide 2 -->
+        <div class="swiper-slide">
+          <img src="assets/image2.png" alt="Image 2">
+        </div>
+        <!-- Slide 3 -->
+        <div class="swiper-slide">
+          <img src="assets/image3.jpeg" alt="Image 3">
+        </div>
+        <!-- Slide 4 -->
+        <div class="swiper-slide">
+          <img src="assets/image4.jpg" alt="Image 4">
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/marcan.jpeg" alt="Image 5">
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/parentia.png" alt="Image 6">
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/genk.png" alt="Image 7">
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/image1.jpg" alt="Image 8">
+        </div>
+        <!-- Add more images here -->
+      </div>
+  
+      <!-- Pagination and Navigation controls -->
+    </div>
+  </div>
+  
+  
+<!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Company Info Section -->
+    <div class="footer-section">
+      <h3>Company Info</h3>
+      <p>Address: Ruisstraat 3600 Genk</p>
+      <p>Email: <a href="mailto:kristof.przybylak@cyberhunter.be">kristof.przybylak@cyberhunter.be</a></p>
+      <p>Phone: <a href="tel:+32499474648">+32499474648</a></p>
+    </div>
+
+    <!-- Links Section -->
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <a href="#">Home</a>
+      <a href="#About">About Us</a>
+      <a href="#offers">Services</a>
+      <a href="mailto:kristof.przybylak@cyberhunter.be">Contact</a>
+    </div>
+
+    <!-- Social Media Section -->
+    <div class="footer-section">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i>Linkedin</a>
+        <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com" target="_blank" aria-label="Youtube"><i class="fab fa-instagram"></i>Youtube</a>
+      </div>
+    </div>
+  </div>
+
+ 
+  <!-- Footer Bottom -->
+  <div class="footer-bottom">
+    <p>&copy; 2025 CyberHunter. All rights reserved. <a href="#">Terms & Conditions</a></p>
+  </div>
+</footer>
+
+
+
+
+
   
 
 
