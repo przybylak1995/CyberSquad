@@ -1,183 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CyberHunter</title>
-    <link rel="stylesheet" href="assets/css/index.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Add Swiper CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
-
-    <!-- Add Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-
-    <script defer src="assets/js/index.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CyberHunter</title>
+  <link rel="stylesheet" href="assets/css/index.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script defer src="assets/js/index.js"></script>
 </head>
 <body>
+  <header class="header">
     <nav class="navbar">
-        <div class="logo">
-            <img src="assets/cyberHunter.png" alt="">
-        </div>
-        <ul class="nav-links">
-            <li><a href="#">Operators</a></li>
-            <li><a href="#About">About</a></li>
-            <li><a href="#">Blog</a></li>
-            <li class="contact fill"><a href="#offers">
-                <img src="assets/shield-virus.svg">
-                Services</a></li>
-            <li class="contact"><a href="mailto:kristof.przybylak@cyberhunter.be">
-                <img src="assets/phone.svg">
-                Contact</a></li>
-        </ul>
-        <div class="burger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
+      <div class="logo">
+        <img src="assets/cyberHunter.png" alt="CyberHunter Logo">
+      </div>
+      <ul class="nav-links">
+        <li><a href="#operators">Operators</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li class="contact fill">
+          <a href="#offers">
+            <img src="assets/shield-virus.svg" alt="Services Icon" class="nav-icon">
+            <span>Services</span>
+          </a>
+        </li>
+        <li class="contact">
+          <a href="mailto:kristof.przybylak@cyberhunter.be">
+            <img src="assets/phone.svg" alt="Contact Icon" class="nav-icon">
+            <span>Contact</span>
+          </a>
+        </li>
+      </ul>
+      <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
     </nav>
-    <div class="main_section_1">
-      <div class="service-item">
-        <h2>Eliminate Bugs Before They Bite</h2>
-        <h3>Comprehensive Web Application Security</h3>
-        <p>Discover and eliminate vulnerabilities in your infrastructure.</p>
+    <div class="hero">
+      <div class="hero-content">
+        <h1>Eliminate Bugs Before They Bite</h1>
+        <p>Comprehensive Web Application Security</p>
         <a class="cta-button" href="#offers">Protect Your Digital Assets Now</a>
       </div>
     </div>
+  </header>
 
-<div class="main_section_2">
-    <div class="intro-container">
-      <div class="left-side">
-        <img src="assets/cyberthread.webp" alt="Your Name">
+  <main>
+    <!-- About Section -->
+    <section class="about-section" id="About">
+      <div class="container about-container">
+        <div class="about-image">
+          <img src="assets/cyberthread.webp" alt="Cyber Thread">
+        </div>
+        <div class="about-text">
+          <h2>Who are we?</h2>
+          <p>
+            Cyberhunters: Your personalized cybersecurity partner. We believe that every organization, big or small, deserves optimal security. Instead of expensive, one-time penetration tests, we offer a proactive and long-term partnership. Our experienced experts get to know your systems in-depth and discover vulnerabilities that others miss. This allows us to effectively protect your business against cyberattacks. Whether it's a manual hunt for vulnerabilities, optimizing your development process, or increasing employee awareness.
+          </p>
+        </div>
       </div>
-      <div id="About" class="right-side">
-        <h2 >Who are we?</h2>
-        <p>Cyberhunters: Your personalized cybersecurity partner. We believe that every organization, big or small, deserves optimal security. Instead of expensive, one-time penetration tests, we offer a proactive and long-term partnership. Our experienced experts get to know your systems in-depth and discover vulnerabilities that others miss. This allows us to effectively protect your business against cyberattacks. Whether it's manual hunt on your website for vulnerabilities, optimizing your development process, or increasing employee awareness: we are here for you. Choose Cyberhunters and sleep soundly again.</p>
-      </div>
-    </div>
-  </div>
+    </section>
 
-  <div class="different">
-    <h2>What Makes Us Different?</h2>
-        <div class="card-container">
-          <div class="card">
+
+    <!-- Features Section -->
+    <section class="features-section">
+      <div class="container">
+        <h2>What Makes Us Different?</h2>
+        <div class="features-grid">
+          <div class="feature-card">
             <h3>Excellence</h3>
-          <p>At CyberHunter, we are committed to delivering the highest quality of service. Our team of experts is dedicated to exceeding industry standards and providing innovative solutions tailored to your unique needs.</p>
+            <p>
+              We are committed to delivering the highest quality service. Our experts exceed industry standards meticulosity, offering innovative solutions tailored to your needs.
+            </p>
           </div>
-            <div class="card">
-                <h3>Collaboration</h3>
-              <p>We believe that strong partnerships are essential for success. We work closely with our clients to understand their goals and challenges, and we collaborate with our team to develop effective strategies that drive results.</p>
-              </div>
-            <div class="card">
-              <h3>Passion</h3>
-            <p>Our team is fueled by a passion for what we do. We are driven to make a positive impact on the world through our work, and we approach every project with enthusiasm and dedication.</p>
-            </div>
+          <div class="feature-card">
+            <h3>Collaboration</h3>
+            <p>
+              Strong partnerships are key. We work closely with you to understand your goals and craft strategies that drive results.
+            </p>
           </div>
+          <div class="feature-card">
+            <h3>Passion</h3>
+            <p>
+              Our team is driven by passion. We strive to make a positive impact and approach every project with enthusiasm and dedication.
+            </p>
+          </div>
+          <div class="feature-card">
+            <h3>Passion</h3>
+            <p>
+              Our team is driven by passion. We strive to make a positive impact and approach every project with enthusiasm and dedication.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+        <!-- Operators Section -->
+<section class="operators-section" id="operators">
+  <div class="container">
+    <h2>Meet Our Operators</h2>
+    <div class="operators-grid">
+      <div class="operator-card">
+        <img src="assets/operator1.jpg" alt="ZeroCool">
+        <h3>ZeroCool</h3>
+        <p>A digital ghost with unparalleled skills in penetrating systems and outsmarting firewalls. Stealth is his middle name.</p>
+      </div>
+      <div class="operator-card">
+        <img src="assets/operator2.jpg" alt="AcidBurn">
+        <h3>AcidBurn</h3>
+        <p>An expert in code and cyber warfare, blending style and precision to defend and attack in the digital arena.</p>
+      </div>
+      <div class="operator-card">
+        <img src="assets/operator3.jpg" alt="ThePlague">
+        <h3>ThePlague</h3>
+        <p>Known for his disruptive tactics and unorthodox methods, turning vulnerabilities into stepping stones for success.</p>
+      </div>
+    </div>
   </div>
+</section>
 
-
-  <div id="offers" class="services">
+<!-- Services Section -->
+<section class="services-section" id="offers">
+  <div class="container">
     <h2>What Do We Offer?</h2>
-    <div class="service-container">
+    <div class="services-grid">
+      <!-- Basic Package -->
       <div class="service-card">
-        <h3>Long Mission</h3>
-        <p>This is a long-term contract in which we are discussing a set number of testing hours per month for a minimum period of six months. By implementing this approach, our operators gain much better insight into the technologies used to build the application. Additionally, we will establish a connection that allows you to reach out to us with any questions regarding new releases, unexpected alerts, or anything else, and we will assist you throughout the entire duration of the agreement. After a testing period with several customers, this method has proven to be a more effective and improved approach.</p>
-        <p class="price">Price for an Operator per hour: €85</p>
-        <a href="mailto:kristof.przybylak@cyberhunter.be" class="contact">Contact for more info</a>
+        <h3>Basic Package</h3>
+        <p>
+          5 hours of testing per month, with monthly reporting and vulnerability analysis.
+          Priority response to identified vulnerabilities. Perfect for small to medium-sized companies needing regular security assessments.
+        </p>
+        <p class="price">€400 per month</p>
+        <a href="mailto:kristof.przybylak@cyberhunter.be" class="contact-btn">Contact for more info</a>
       </div>
+      <!-- Premium Package -->
       <div class="service-card">
-        <h3>Short Mission</h3>
-        <p>A short-term mission is comparable to a penetration test, but with a focused, time-efficient approach. We dedicate a short period to thoroughly assess the web application, delivering one comprehensive report with our findings. This service is ideal when time is of the essence, such as when a project needs to go live quickly or when an audit is required to ensure compliance with security standards. We aim to begin the mission within a week, which is a fast turnaround in an industry where longer wait times are common.</p>
-        <p class="price">Price for an Operator per hour: €140</p>
-        <a href="mailto:kristof.przybylak@cyberhunter.be" class="contact">Contact for more info</a>
+        <h3>Premium Package</h3>
+        <p>
+          10 hours of testing per month, including detailed reports, real-time monitoring, and prompt incident support.
+          Ideal for companies requiring an extra layer of assurance.
+        </p>
+        <p class="price">€750 per month</p>
+        <a href="mailto:kristof.przybylak@cyberhunter.be" class="contact-btn">Contact for more info</a>
+      </div>
+      <!-- Enterprise Package -->
+      <div class="service-card">
+        <h3>Enterprise Package</h3>
+        <p>
+          Tailored security solutions, 24/7 monitoring, comprehensive analyses, and continuous support for large organizations that prioritize security.
+        </p>
+        <p class="price">€1200 per month</p>
+        <a href="mailto:kristof.przybylak@cyberhunter.be" class="contact-btn">Contact for more info</a>
       </div>
     </div>
   </div>
+</section>
 
 
 
-  <div class="carousel-container">
-    <div class="swiper-container">
-      <div class="swiper-wrapper">
-        <!-- Slide 1 -->
-        <div class="swiper-slide">
-          <img src="assets/tilroy.png" alt="Image 1">
+
+    <!-- Carousel Section -->
+    <section class="carousel-section">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="assets/tilroy.png" alt="Partner 1">
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/image2.png" alt="Partner 2">
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/Wara.jpeg" alt="Partner 3">
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/image4.jpg" alt="Partner 4">
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/marcan.jpeg" alt="Partner 5">
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/parentia.png" alt="Partner 6">
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/genk.png" alt="Partner 7">
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/image1.jpg" alt="Partner 8">
+          </div>
         </div>
-        <!-- Slide 2 -->
-        <div class="swiper-slide">
-          <img src="assets/image2.png" alt="Image 2">
-        </div>
-        <!-- Slide 3 -->
-        <div class="swiper-slide">
-          <img src="assets/image3.jpeg" alt="Image 3">
-        </div>
-        <!-- Slide 4 -->
-        <div class="swiper-slide">
-          <img src="assets/image4.jpg" alt="Image 4">
-        </div>
-        <div class="swiper-slide">
-          <img src="assets/marcan.jpeg" alt="Image 5">
-        </div>
-        <div class="swiper-slide">
-          <img src="assets/parentia.png" alt="Image 6">
-        </div>
-        <div class="swiper-slide">
-          <img src="assets/genk.png" alt="Image 7">
-        </div>
-        <div class="swiper-slide">
-          <img src="assets/image1.jpg" alt="Image 8">
-        </div>
-        <!-- Add more images here -->
       </div>
-  
-      <!-- Pagination and Navigation controls -->
-    </div>
-  </div>
-  
-  
-<!-- Footer Section -->
-<footer class="footer">
-  <div class="footer-container">
-    <!-- Company Info Section -->
-    <div class="footer-section">
-      <h3>Company Info</h3>
-      <p>Email: <a href="mailto:kristof.przybylak@cyberhunter.be">kristof.przybylak@cyberhunter.be</a></p>
-      <p>Phone: <a href="tel:+32499474648">+32499474648</a></p>
-    </div>
+    </section>
+  </main>
 
-    <!-- Links Section -->
-    <div class="footer-section">
-      <h3>Quick Links</h3>
-      <a href="#">Home</a>
-      <a href="#About">About Us</a>
-      <a href="#offers">Services</a>
-      <a href="mailto:kristof.przybylak@cyberhunter.be">Contact</a>
-    </div>
-
-    <!-- Social Media Section -->
-    <div class="footer-section">
-      <h3>Follow Us</h3>
-      <div class="social-icons">
-        <a href="https://www.linkedin.com/in/kristof-przybylak-a76785127/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i>Linkedin</a>
-        <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.youtube.com/@CyberSquad-JoinTheSquad" target="_blank" aria-label="Youtube"><i class="fab fa-instagram"></i>Youtube</a>
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-column">
+        <h3>Company Info</h3>
+        <p>Email: <a href="mailto:kristof.przybylak@cyberhunter.be">kristof.przybylak@cyberhunter.be</a></p>
+        <p>Phone: <a href="tel:+32499474648">+32499474648</a></p>
+      </div>
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <a href="#">Home</a>
+        <a href="#About">About Us</a>
+        <a href="#offers">Services</a>
+        <a href="mailto:kristof.przybylak@cyberhunter.be">Contact</a>
+      </div>
+      <div class="footer-column">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/kristof-przybylak-a76785127/" target="_blank">LinkedIn</a>
+          <a href="https://www.instagram.com" target="_blank">Instagram</a>
+          <a href="https://www.youtube.com/@CyberSquad-JoinTheSquad" target="_blank">YouTube</a>
+        </div>
       </div>
     </div>
-  </div>
-
- 
-  <!-- Footer Bottom -->
-  <div class="footer-bottom">
-    <p>&copy; 2025 CyberHunter. All rights reserved. <a href="#">Terms & Conditions</a></p>
-  </div>
-</footer>
-
-
-
-
-
-  
-
-
+    <div class="footer-bottom">
+      <p>&copy; 2025 CyberHunter. All rights reserved. <a href="#">Terms &amp; Conditions</a></p>
+    </div>
+  </footer>
 </body>
 </html>
