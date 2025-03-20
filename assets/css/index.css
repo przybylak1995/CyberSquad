@@ -11,7 +11,9 @@
   --font-primary: 'Roboto', sans-serif;
   --font-secondary: 'Montserrat', sans-serif;
 }
-
+html, body {
+  overflow-x: hidden;
+}
 * {
   box-sizing: border-box;
   margin: 0;
