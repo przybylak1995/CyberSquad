@@ -605,3 +605,112 @@ body {
 .back-to-blog:hover {
   color: var(--accent-green);
 }
+
+
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #f0f0f0;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.service-card {
+  background-color: #fff;
+  color: #333;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 115, 230, 0.2);
+}
+
+.service-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.price-tag {
+  font-weight: bold;
+  background: #eee;
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+}
+
+.service-subtitle {
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.service-features {
+  list-style: none;
+  padding-left: 1rem;
+  margin: 0 0 1rem 0;
+}
+
+.service-features li {
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+.cta-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.25rem;
+  background-color: #0073e6;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.cta-btn:hover {
+  background-color: #005bb5;
+}
+
+/* Bovenranden per type */
+.service-card.starter {
+  border-top: 6px solid #4da6ff;
+}
+
+.service-card.pentest {
+  border-top: 6px solid #ffaa33;
+}
+
+.service-card.partnership {
+  border-top: 6px solid #33cc99;
+}
+
+.starter .price-tag {
+  background-color: #e0f0ff;
+  color: #0073e6;
+}
+
+.pentest .price-tag {
+  background-color: #fff1e0;
+  color: #d17b00;
+}
+
+.partnership .price-tag {
+  background-color: #e0fff2;
+  color: #1a9d74;
+}
