@@ -18,38 +18,36 @@
 </head>
 <body>
 <header class="header">
-  <nav class="navbar">
-    <div class="logo">
-      <img src="assets/img/cyberHunter.png" alt="CyberHunter Logo">
-    </div>
-    <ul class="nav-links">
-      <li><a href="#operators">Operators</a></li>
-      <li><a href="#About">Over ons</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li class="contact fill">
-        <a href="#offers">
-          <img src="assets/img/shield-virus.svg" alt="Diensten icoon" class="nav-icon">
-          <span>Diensten</span>
-        </a>
-      </li>
-      <li class="contact">
-        <a href="mailto:kristof.przybylak@cyberhunter.be">
-          <img src="assets/img/phone.svg" alt="Contact icoon" class="nav-icon">
-          <span>Contact</span>
-        </a>
-      </li>
-    </ul>
-    <div class="burger">
-      <div class="line"></div>
-      <div class="line"></div>
-      <div class="line"></div>
-    </div>
-  </nav>
   <div class="hero">
-    <div class="hero-content">
-      <h1>Eliminate bugs before they bite</h1>
-      <p>Grondige Beveiliging van Webapplicaties</p>
-      <a class="cta-button" href="#offers">Bescherm Jouw Digitale Assets Nu</a>
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">Global Top 500 Bug Bounty Hunter</div>
+        <h1>Uw webapplicatie, <span class="highlight">gehackt</span> door een expert.</h1>
+        <p>
+          Ik ben geen consultant die vakjes afvinkt. Ik ben een specialist die zich amuseert op uw infrastructuur tot elk gat gedicht is. Professionele beveiliging vanuit een offensieve mindset.
+        </p>
+        <div class="hero-btns">
+          <a class="cta-button" href="#offers">Bekijk Subscription Plans</a>
+          <a class="cta-button secondary" href="mailto:kristof.przybylak@cyberhunter.be">Direct contact</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="terminal-window">
+          <div class="terminal-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <div class="terminal-body">
+            <p>$ cyberhunter --target your-app.be</p>
+            <p class="t-green">> Scanning for vulnerabilities...</p>
+            <p class="t-red">> Critical bug found in API endpoint.</p>
+            <p class="t-white">> Escalating privileges... Success.</p>
+            <p class="t-blue">> Security status: Improving...</p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </header>
@@ -71,57 +69,73 @@
   </section>
 
   <!-- Kenmerken -->
-  <section class="features-section">
+  <section class="unique-section">
     <div class="container">
-      <h2>Wat Maakt Ons Uniek?</h2>
-      <div class="features-grid">
-        <div class="feature-card">
-          <h3>Uitmuntendheid</h3>
-          <p>
-            Wij leveren alleen diensten van de hoogste kwaliteit. Onze experts overstijgen de normen met innovatieve oplossingen, volledig afgestemd op jouw noden.
+      <div class="unique-grid">
+        <div class="unique-content">
+          <h2 class="section-title">Niet zomaar een audit, maar een jacht.</h2>
+          <p class="lead-text">
+            De meeste security bedrijven volgen een checklist. Wij breken die checklist af.
+            Met een achtergrond in de <strong>globale Bug Bounty top 500</strong>, benaderen wij uw systemen niet als een taak, maar als een uitdaging.
           </p>
+
+          <div class="unique-features">
+            <div class="u-feature">
+              <span class="u-icon">🏆</span>
+              <div>
+                <h4>Wereldklasse Expertise</h4>
+                <p>Geselecteerd uit miljoenen hackers wereldwijd. Wij zien wat geautomatiseerde scanners en standaard consultants missen.</p>
+              </div>
+            </div>
+
+            <div class="u-feature">
+              <span class="u-icon">🔥</span>
+              <div>
+                <h4>Gedreven door Passie</h4>
+                <p>Wij amuseren ons op onze targets. Dat betekent dat we niet stoppen bij de eerste bug, maar doorgaan tot we de kern van uw kwetsbaarheid vinden.</p>
+              </div>
+            </div>
+
+            <div class="u-feature">
+              <span class="u-icon">🎯</span>
+              <div>
+                <h4>Geen 'Checkbox' Mentaliteit</h4>
+                <p>Wij leveren geen dikke rapporten vol irrelevante info. Wij leveren kritieke inzichten die uw bedrijf écht beschermen.</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="feature-card">
-          <h3>Samenwerking</h3>
-          <p>
-            Sterke samenwerkingen staan centraal. We werken nauw met je samen om je doelen te begrijpen en strategieën te ontwikkelen die écht resultaat opleveren.
-          </p>
-        </div>
-        <div class="feature-card">
-          <h3>Passie</h3>
-          <p>
-            Ons team wordt gedreven door passie. Elk project benaderen we met enthousiasme en toewijding, steeds met het oog op positieve impact.
-          </p>
-        </div>
-        <div class="feature-card">
-          <h3>De Hacker Mindset</h3>
-          <p>
-            Met de hacker mindset blijven we nieuwsgierig en innovatief. Zo doorbreken we grenzen in digitale beveiliging en creëren we blijvende impact.
-          </p>
+
+        <div class="unique-stat-box">
+          <div class="stat-circle">
+            <span class="stat-number">#500</span>
+            <span class="stat-desc">Global Rank</span>
+          </div>
+          <div class="stat-tag">Bug Bounty Elite</div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Operators -->
-  <section class="operators-section" id="operators">
+  <section class="expertise-section" id="expertise">
     <div class="container">
-      <h2>Ontmoet Onze Operators</h2>
-      <div class="operators-grid">
-        <div class="operator-card">
-          <img src="assets/img/monkey.jpg" alt="ZeroCool">
-          <h3>Noxy</h3>
-          <p>Met een niet aflatende passie voor cybersecurity leid ik ons bedrijf als eigenaar én hoofd-hacker. Mijn expertise in web, API, AI LLM en mobiele hacking drijft onze innovatieve aanpak in digitale beveiliging.</p>
+      <h2 class="section-title">Gecertificeerde Expertise</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <img src="assets/img/shield-check.svg" alt="" class="small-icon">
+          <h3>Methodologie</h3>
+          <p>Wij werken volgens de <strong>OWASP ASVS</strong> en <strong>NIST</strong> standaarden. Geen oppervlakkige scans, maar diepgaande handmatige analyses.</p>
         </div>
-        <div class="operator-card">
-          <img src="assets/img/coonie.jpg" alt="AcidBurn">
-          <h3>Racoonie</h3>
-          <p>Racoonie is onze stille kracht – zorgt voor snacks, schrijft topverslagen, en houdt de communicatie soepel draaiende.</p>
+        <div class="feature-card">
+          <img src="assets/img/terminal.svg" alt="" class="small-icon">
+          <h3>Tech Stack</h3>
+          <p>Specialisten in moderne omgevingen: React, Node.js, Cloud Infrastructure (AWS/Azure) en complexe API-koppelingen.</p>
         </div>
-        <div class="operator-card">
-          <img src="assets/img/anonymous.jpg" alt="ThePlague">
-          <h3>ANONIEM</h3>
-          <p>BEN JIJ DE VOLGENDE...</p>
+        <div class="feature-card">
+          <img src="assets/img/lock.svg" alt="" class="small-icon">
+          <h3>Ethiek & Integriteit</h3>
+          <p>Als ethische hackers garanderen wij volledige discretie en veilige afhandeling van uw gevoelige data tijdens onze testen.</p>
         </div>
       </div>
     </div>
@@ -130,58 +144,49 @@
   <!-- Diensten -->
   <section class="services-section" id="offers">
     <div class="container">
-      <h2 class="section-title">Onze Diensten</h2>
+      <h2 class="section-title">Beveiliging als een Service</h2>
+      <p class="section-subtitle">Kies het niveau van bescherming dat bij uw groei past.</p>
+
       <div class="services-grid">
 
-        <!-- Starter -->
-        <div class="service-card modern starter">
-          <div class="service-header">
-            <h3>🔹 Starter Security Check</h3>
-            <span class="price-tag">€399</span>
-          </div>
-          <p class="service-subtitle">Ideaal voor kleine websites of SaaS MVP’s</p>
+        <div class="service-card starter">
+          <div class="service-badge">Essentieel</div>
+          <h3>Starter</h3>
+          <div class="price">€990 <span>/ maand</span></div>
           <ul class="service-features">
-            <li>🧪 Manuele test van login, formulieren, adminpanelen</li>
-            <li>🔍 Scanning met tools + manuele validatie</li>
-            <li>📋 Basisrapport met kwetsbaarheden & advies</li>
-            <li>📞 1 uur overleg (call of mail)</li>
-            <li>💡 Perfecte instap voor KMO's zonder groot risico.</li>
+            <li><img src="assets/img/check.svg" alt=""> Maandelijkse automated scans</li>
+            <li><img src="assets/img/check.svg" alt=""> 1 dag diepgaand manual testing</li>
+            <li><img src="assets/img/check.svg" alt=""> Kwartaalrapportage (PDF)</li>
+            <li><img src="assets/img/check.svg" alt=""> Focus op de OWASP Top 10</li>
           </ul>
-          <a href="mailto:kristof.przybylak@cyberhunter.be" class="cta-btn">Aanvragen</a>
+          <a href="mailto:kristof.przybylak@cyberhunter.be?subject=Aanvraag Starter Pakket" class="cta-btn secondary">Kies Starter</a>
         </div>
 
-        <!-- Pentest -->
-        <div class="service-card modern pentest">
-          <div class="service-header">
-            <h3>🔸 Volledige Webapp Pentest</h3>
-            <span class="price-tag">€1.100 – €1.500</span>
-          </div>
-          <p class="service-subtitle">Voor apps met users, betalingen, API's…</p>
+        <div class="service-card growth popular">
+          <div class="service-badge">Meest gekozen</div>
+          <h3>Growth</h3>
+          <div class="price">€1.500 <span>/ maand</span></div>
           <ul class="service-features">
-            <li>⚔️ Blackbox/Graybox test van je app</li>
-            <li>🛡️ OWASP Top 10 & business logic test</li>
-            <li>📊 Rapport met score, risico’s en aanbevelingen</li>
-            <li>♻️ 1 gratis hertest inbegrepen</li>
-            <li>💬 Toelichting voor devs of zaakvoerder</li>
+            <li><img src="assets/img/check.svg" alt=""> Continue automated scanning</li>
+            <li><img src="assets/img/check.svg" alt=""> 2–3 dagen Manual Bug Hunting</li>
+            <li><img src="assets/img/check.svg" alt=""> Maandelijks uitgebreid rapport</li>
+            <li><img src="assets/img/check.svg" alt=""> Direct contact via Slack / Mail</li>
+            <li><img src="assets/img/check.svg" alt=""> Vulnerability management</li>
           </ul>
-          <a href="mailto:kristof.przybylak@cyberhunter.be" class="cta-btn">Pentest aanvragen</a>
+          <a href="mailto:kristof.przybylak@cyberhunter.be?subject=Aanvraag Growth Pakket" class="cta-btn">Kies Growth</a>
         </div>
 
-        <!-- Partnership -->
-        <div class="service-card modern partnership">
-          <div class="service-header">
-            <h3>🔶 Security Partnership</h3>
-            <span class="price-tag">Vanaf €250/maand</span>
-          </div>
-          <p class="service-subtitle">Voor bedrijven die willen blijven verbeteren</p>
+        <div class="service-card critical">
+          <div class="service-badge">Enterprise</div>
+          <h3>Critical</h3>
+          <div class="price">€3.000+ <span>/ maand</span></div>
           <ul class="service-features">
-            <li>🔁 Korte pentest of hercheck elk kwartaal</li>
-            <li>📨 Directe vragen via mail of Slack</li>
-            <li>🚨 Advies bij incidenten</li>
-            <li>🔎 Kleine code/config reviews</li>
-            <li>🌿 Jij wordt hun vaste securitypartner.</li>
+            <li><img src="assets/img/check.svg" alt=""> 4+ dagen dedicated testing</li>
+            <li><img src="assets/img/check.svg" alt=""> Priority vulnerability patching</li>
+            <li><img src="assets/img/check.svg" alt=""> Incident Response Support</li>
+            <li><img src="assets/img/check.svg" alt=""> Architectuur review & advies</li>
           </ul>
-          <a href="mailto:kristof.przybylak@cyberhunter.be" class="cta-btn">Start partnerschap</a>
+          <a href="mailto:kristof.przybylak@cyberhunter.be?subject=Aanvraag Critical Pakket" class="cta-btn secondary">Kies Critical</a>
         </div>
 
       </div>
@@ -207,29 +212,62 @@
 </main>
 
 <footer class="footer">
-  <div class="container footer-container">
-    <div class="footer-column">
-      <h3>Bedrijfsinfo</h3>
-      <p>Email: <a href="mailto:kristof.przybylak@cyberhunter.be">kristof.przybylak@cyberhunter.be</a></p>
-    </div>
-    <div class="footer-column">
-      <h3>Snelkoppelingen</h3>
-      <a href="#">Home</a>
-      <a href="#About">Over ons</a>
-      <a href="#offers">Diensten</a>
-      <a href="mailto:kristof.przybylak@cyberhunter.be">Contact</a>
-    </div>
-    <div class="footer-column">
-      <h3>Volg ons</h3>
-      <div class="social-icons">
-        <a href="https://www.linkedin.com/in/kristof-przybylak-a76785127/" target="_blank">LinkedIn</a>
-        <a href="https://www.instagram.com" target="_blank">Instagram</a>
-        <a href="https://www.youtube.com/@CyberSquad-JoinTheSquad" target="_blank">YouTube</a>
+  <div class="container footer-grid">
+
+    <div class="footer-column branding">
+      <img src="assets/img/cyberHunter.png" alt="CyberHunter Logo" class="footer-logo">
+      <p>Proactieve beveiliging voor moderne ondernemingen. Wij beschermen uw digitale assets zodat u zich kunt focussen op groei.</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/kristof-przybylak-a76785127/" target="_blank" aria-label="LinkedIn">
+          <img src="assets/img/linkedin-icon.svg" alt="LinkedIn">
+        </a>
+        <a href="https://www.youtube.com/@CyberSquad-JoinTheSquad" target="_blank" aria-label="YouTube">
+          <img src="assets/img/youtube-icon.svg" alt="YouTube">
+        </a>
       </div>
     </div>
+
+    <div class="footer-column">
+      <h4>Navigatie</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#About">Over Ons</a></li>
+        <li><a href="#expertise">Expertise</a></li>
+        <li><a href="#offers">Diensten</a></li>
+       <!-- <li><a href="blog.html">Security Blog</a></li>-->
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Diensten</h4>
+      <ul>
+        <li><a href="#offers">Starter Plan</a></li>
+        <li><a href="#offers">Growth Plan</a></li>
+        <li><a href="#offers">Critical Support</a></li>
+        <li><a href="mailto:kristof.przybylak@cyberhunter.be">Custom Pentest</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Contact</h4>
+      <p>Vragen? Neem direct contact op.</p>
+      <a href="mailto:kristof.przybylak@cyberhunter.be" class="footer-email">kristof.przybylak@cyberhunter.be</a>
+      <div class="business-info">
+        <p>BTW BE 0743.XXX.XXX</p>
+        <p>Genk, België</p>
+      </div>
+    </div>
+
   </div>
+
   <div class="footer-bottom">
-    <p>&copy; 2025 CyberHunter. Alle rechten voorbehouden. <a href="#">Algemene voorwaarden</a></p>
+    <div class="container bottom-flex">
+      <p>&copy; 2026 CyberHunter. Alle rechten voorbehouden.</p>
+      <div class="legal-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Algemene Voorwaarden</a>
+      </div>
+    </div>
   </div>
 </footer>
 </body>
