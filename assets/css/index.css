@@ -746,3 +746,54 @@ a {
   .hero-btns { justify-content: center; }
   .hero-visual { display: none; } /* Verberg terminal op kleinere schermen voor focus */
 }
+
+/* Bounty Table Styling */
+.bounty-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.bounty-table th {
+  color: var(--accent-blue);
+  border-bottom: 1px solid var(--glass-border);
+  padding: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.bounty-table td {
+  padding: 12px 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.bounty-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* Severity Colors */
+.low td:first-child { color: #a3a3a3; font-weight: bold; }
+.medium td:first-child { color: #fbbf24; font-weight: bold; }
+.high td:first-child { color: #f97316; font-weight: bold; }
+.critical td:first-child { color: #ef4444; font-weight: bold; text-shadow: 0 0 10px rgba(239, 68, 68, 0.4); }
+
+.table-note {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+/* Aanpassing bestaande card voor tabel */
+.service-card.growth {
+  min-width: 400px; /* Iets breder voor de tabel */
+}
+
+@media (max-width: 600px) {
+  .service-card.growth {
+    min-width: unset;
+    padding: 2rem 1rem;
+  }
+}
